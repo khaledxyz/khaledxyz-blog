@@ -1,15 +1,20 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
-import compressor from "astro-compressor";
+import compressor from 'astro-compressor';
 import sitemap from '@astrojs/sitemap';
 import robotsTxt from 'astro-robots-txt';
 import { VitePWA } from 'vite-plugin-pwa';
+import vercel from '@astrojs/vercel/serverless';
 
 import { manifest } from './src/utils/manifest';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
   site: 'http://localhost:4322/',
   image: {
     remotePatterns: [{ protocol: 'https' }],
