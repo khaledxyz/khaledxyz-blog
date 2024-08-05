@@ -7,6 +7,7 @@ import CategoryIcon from "@icons/CategoryIcon.astro";
 import { Image } from "astro:assets";
 import config from "@config/config.json";
 import { slugify } from "@utils/slug";
+import Comments from "@components/Comments.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -85,4 +86,5 @@ const { title, description, pubDate, heroImage, categories, tags } =
       }
     </div>
   </article>
+  <Comments />
 </Base>

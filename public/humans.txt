@@ -1,15 +1,15 @@
 /* TEAM */
-	Chef: Oscar Barajas Tavares
-	Contact: oscar [at] gndx.dev
-	Twitter: @gndx
-	From: Medellín, Antioquia, Colombia.
+	Chef: Khaled
+	Contact: me [at] khaledxyz.com
+	Github: @khaledxyz
+	From: Algiers, Algeria.
 
 /* THANKS */
 	Template: EV0 Theme
 	GitHub: @gndx
 
 /* SITE */
-	Last update: 2023/09/18
-	Language: Spanish
+	Last update: 2024/09/05
+	Language: English
 	Doctype: Astro
 	IDE: VSCode
